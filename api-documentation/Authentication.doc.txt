@@ -1,0 +1,32 @@
+Overview
+The learniverse API uses JSON Web Tokens (JWT) for authentication. This documentation explains how the generation and handling of access and refresh tokens take place.
+
+Access Token
+The access token is a JSON Web Token (JWT) that is generated when a user logs in. It contains the user's ID, username, and email, and is signed with a secret key.
+
+Generation
+The access token is generated using the generateAccessAndRefreshToken function:
+This function generates an access token and a refresh token for a user. Here's what it does:
+
+It finds the user by ID in the database.
+It generates an access token using the user's details (ID, username, email, etc.).
+It generates a refresh token using the user's details.
+It saves the refresh token to the user's document in the database.
+It returns both the access token and refresh token.
+
+verifyJWT
+
+This function verifies an access token sent in the Authorization header of a request. Here's what it does:
+
+It extracts the access token from the Authorization header.
+It verifies the token using a secret key.
+If the token is valid, it extracts the user's details from the token and stores them in the req.user object.
+It calls the next middleware function in the chain.
+
+generateNewAccessToken
+
+This function generates a new access token using a refresh token. Here's what it does:
+
+It finds the user by refresh token in the database.
+If the user is found, it generates a new access token using the user's details.
+It returns the new access token.

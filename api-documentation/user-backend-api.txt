@@ -1,0 +1,38 @@
+Getting Started:
+
+Welcome to the learniverse's API documentation! This API provides a set of endpoints for managing users, todos, and chess games.
+
+Getting started guide
+To start using the learniverse's API, you need to:
+
+Register a user: Send a POST request to the /register endpoint with the required user details.
+
+Login: Send a POST request to the /login endpoint with the user's email and password.
+
+Obtain an access token: Use the generateAccessAndRefreshToken function to obtain an access token.
+
+Use the access token: Include the access token in the Authorization header of your requests.
+
+Authentication
+The learniverse's API uses JSON Web Tokens (JWT) for authentication.
+
+API Key: You can obtain an API key by registering a user and logging in.
+Authorization Header: Include the access token in the Authorization header of your requests.
+
+Endpoints
+User Endpoints
+Register: POST /register
+Login: POST /login
+Logout: GET /logout
+
+Schema
+User Schema
+username: string
+email: string
+fullname: string
+password: string
+refreshTokens: string
+
+Libraries and Resources
+Mongoose: For MongoDB interactions.
+Express: For building the API.

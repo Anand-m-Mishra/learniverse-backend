@@ -1,0 +1,30 @@
+Learniverse
+
+Learniverse is an e-learning platform that provides a comprehensive learning experience for users. This project is a learning project, and its primary goal is to demonstrate the implementation of various features and technologies in a real-world application.
+
+Getting Started
+
+To get started with the project, follow these steps:
+
+Clone the repository: git clone https://github.com/Anand-m-Mishra/learniverse-backend.git
+Install the required dependencies: npm install
+Start the server: npm run dev
+
+Features
+
+Authentication
+
+User registration and login using JSON Web Tokens (JWT)
+Password hashing and salting using bcrypt
+Token verification and refresh token implementation
+for better undestanding check:Authentication.doc.txt
+for understanding usercreatinn check:api-documentation\user-backend-api.txt
+
+completing tasks added to todo and some pre defined tasks
+
+for understanding the todo apis read:api-documentation\todo-backend-api.txt
+
+
+Acknowledgments
+
+

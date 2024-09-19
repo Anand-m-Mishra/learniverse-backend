@@ -1,0 +1,10 @@
+Todo Endpoints
+Get Todos: GET /todos
+Create Todo: POST /todos
+Update Todo: PUT /todos/:id
+Delete Todo: DELETE /todos/:id
+
+Todo Schema
+title: string
+description: string
+completed: boolean
