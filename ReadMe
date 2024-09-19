@@ -17,12 +17,13 @@ Authentication
 User registration and login using JSON Web Tokens (JWT)
 Password hashing and salting using bcrypt
 Token verification and refresh token implementation
-for better undestanding check:Authentication.doc.txt
-for understanding usercreatinn check:api-documentation\user-backend-api.txt
+for better undestanding check: https://github.com/Anand-m-Mishra/learniverse-backend/blob/main/api-documentation/Authentication.doc.txt
+for understanding user creatinn check: https://github.com/Anand-m-Mishra/learniverse-backend/blob/main/api-documentation/user-backend-api.txt
 
 completing tasks added to todo and some pre defined tasks
 
-for understanding the todo apis read:api-documentation\todo-backend-api.txt
+for understanding the todo apis read:  https://github.com/Anand-m-Mishra/learniverse-backend/blob/main/api-documentation/todo-backend-api.txt
+
 
 
 Acknowledgments
